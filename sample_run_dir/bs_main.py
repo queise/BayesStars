@@ -1,6 +1,6 @@
 #!/usr/bin/python
-from bs_class import *
 import pymultinest
+from bs_func import *
 
 def main():
     """
@@ -27,8 +27,8 @@ def main():
         - run_dir/ : to be created by user, is a copy of the sample_run_dir/ directory provided (name can be changed), with:
 		       bs_main.py, bs_class.py, bs_func.py, bs_func2.py, dmp2k.out, sun.don
 		       and, if running in cluster with cue system: condor.sub  openmpiscript
-        - inputs/  : initially empty, put it in /local if running in cluster
-        - outputs/ : initially empty, put it in /local if running in cluster
+        - inputs/  : created in self.localdir (bs_class.py) if non existent (put it in /local if running in cluster)
+        - outputs/ : created in self.localdir (bs_class.py) if non existent (put it in /local if running in cluster)
         - default_input_files/ m010.zams, adipls.c.in, agsm.l5bi.d.15.p2, redistrb.in
 
     Usage:

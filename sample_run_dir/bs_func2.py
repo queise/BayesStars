@@ -29,8 +29,8 @@ def load_model_freqs(self):
     f_min, f_max = self.obs_data[6:8]
 
     # we load the observed frequencies:
-    self.l_n = np.loadtxt(self.modelname+'.freqs', usecols = (1,2), dtype=int) #[('f0',int),('f1',int),('f2',float),('f3',float)])
-    freqs = np.loadtxt(self.modelname+'.freqs', usecols = (6,))
+    self.l_n = np.loadtxt(self.file_fre, usecols = (1,2), dtype=int) #[('f0',int),('f1',int),('f2',float),('f3',float)])
+    freqs = np.loadtxt(self.file_fre, usecols = (6,))
     # radial orders (n) min and max for each and degree (l)
     self.l_max = min(np.max([row[0] for row in self.l_n]),3) # maximum l=3
     self.n_max = np.zeros(self.l_max+1, dtype=int)
