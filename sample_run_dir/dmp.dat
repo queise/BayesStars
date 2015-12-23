@@ -1,0 +1,42 @@
+
+ :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ ::                                                       ::
+ ::      D M P                                            ::
+ ::      D A R K - M A T T E R                            ::
+ ::      E V O L U T I O N   of    S T A R S              ::
+ ::      version 2.0                                      ::
+ ::                                                       ::
+ ::   Ilidio Lopes, Tiago Pereira and Jordi Casanellas    ::
+ ::   IST - Portugal                                      ::
+ ::   UEvora - Portugal                                   ::
+ ::   Oxford - United Kingdom                             ::
+ ::                                                       ::
+ :::::::::::::::::;:::::::::::::::::::::::::::::::::::::::::
+
+ *** WIMP parameters:
+&NL_DARKMATTER
+ MASSWIMP=  0.0000000000000000     ,
+ SCATCSH=  9.9999999999999995E-045,
+ SCATCSH_SD=  9.9999999999999996E-039,
+ ANNIHCS=  3.0000000000000001E-026,
+ VSUNESCAPE=  618.00000000000000     ,
+ VSTAR=  220.00000000000000     ,
+ VWIMPRMS=  270.00000000000000     ,
+ RHODMHALO=  0.0000000000000000     ,
+ /
+ 
+ *** Physics options:
+&NL_DMPPHYSICS
+ CAPTURE="dsntcapsunnum       ",
+ WPDIST="dmdistribution      ",
+ KNUDSEN="dmetransport        ",
+ EN_TRANSPORT="none                ",
+ EN_PROD="none                ",
+ OPA_KLARGE="dmklarge            ",
+ OPA_KSMALL="dmksmall            ",
+ ANNIHILATION="dmannihilation      ",
+ /
+ 
+ *** LIST of S/Rs used:
+ -------- No DM needed, DM SR will not be called again -----------
+          en_transport:none                 en_prod:none                
